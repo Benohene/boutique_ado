@@ -97,7 +97,9 @@ a.category-badge > span.badge:hover {
   right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
   cursor: pointer;
 }
 
@@ -121,14 +123,14 @@ a.category-badge > span.badge:hover {
   }
 
   .header-container {
-    padding-top: 64px;
+    padding-top: 164px;
   }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
   .header-container {
-    padding-top: 64px;
+    padding-top: 116px;
   }
 
   body {

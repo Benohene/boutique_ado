@@ -32,7 +32,6 @@ class OrderForm(forms.ModelForm):
             "street_address2": "Street Address 2",
             "town_or_city": "Town or City",
             "postcode": "Postcode",
-            "country": "Country",
             "county": "County, State or Region"
         }
         

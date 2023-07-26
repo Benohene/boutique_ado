@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-xu7wv2j5i!w$v-qlb!f6d9m5&x4@nym(q8i&6*9zxn$tma=78-
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-
+CSRF_TRUSTED_ORIGINS=[]
 # Application definition
 
 INSTALLED_APPS = [
@@ -172,10 +171,9 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Stripe
-FREE_DELIVERY_THRESHOLD = 50
-STANDARD_DELIVERY_PERCENTAGE = 10
-STRIPE_CURRENCY = 'usd'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
-# STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
-# STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
+FREE_DELIVERY_THRESHOLD = 50                      # Free delivery threshold
+STANDARD_DELIVERY_PERCENTAGE = 10   # 10%
+STRIPE_CURRENCY = 'usd'                                # Currency
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')  # Public key
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')  # Secret key
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')    # Webhook secret

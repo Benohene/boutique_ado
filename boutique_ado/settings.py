@@ -178,4 +178,4 @@ STRIPE_CURRENCY = 'usd'                                # Currency
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')  # Public key
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')  # Secret key
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')    # Webhook secret
-DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+DEFAULT_FROM_EMAIL = 'boutiqueado.example.com'

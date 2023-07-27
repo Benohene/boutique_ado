@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-xu7wv2j5i!w$v-qlb!f6d9m5&x4@nym(q8i&6*9zxn$tma=78-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["boutique-ado-ben-app.herokuapp.com", "localhost",]
-CSRF_TRUSTED_ORIGINS=[]
+ALLOWED_HOSTS = ["boutique-ado-ben-app.herokuapp.com", '127.0.0.1','boutique-ado-ben-9d8c1e24e146.herokuapp.com',]
+CSRF_TRUSTED_ORIGINS=["boutique-ado-ben-app.herokuapp.com", ]
 # Application definition
 
 INSTALLED_APPS = [
